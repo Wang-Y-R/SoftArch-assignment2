@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: hotel-pricing-multi-agent
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY:sk-b55463034cf04e56b49051e5d465948c}
+      chat:
+        options:
+          model: deepseek-v4-flash
+          temperature: 0.3
+
+logging:
+  level:
+    com.hotelpricing: DEBUG
+  file:
+    path: logs/

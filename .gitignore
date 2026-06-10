@@ -1,0 +1,33 @@
+# Maven build output
+target/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+
+# Logs
+logs/
+src/main/resources/logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+*.jar
+*.war
+*.log
+
+# Assignment PDF (not source code)
+*.pdf
+
+# Temporary files
+*.tmp
+pdf_content.txt

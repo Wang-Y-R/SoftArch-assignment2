@@ -5,12 +5,20 @@ spring:
   application:
     name: hotel-pricing-multi-agent
   ai:
-    dashscope:
-      api-key: ${DASHSCOPE_API_KEY:sk-b55463034cf04e56b49051e5d465948c}
+    openai:
+      api-key: ${OPENAI_API_KEY:sk-f9d0c39e736d4fcebcb16ecce9e97804}
+      base-url: https://api.deepseek.com
       chat:
         options:
-          model: deepseek-v4-flash
+          model: deepseek-v4-pro
           temperature: 0.3
+
+# HTTP client timeouts for OpenAI API calls.
+# Complex LLM responses can take 60-180s; default read timeout is only 10-30s.
+app:
+  http:
+    connect-timeout: 10s
+    read-timeout: 300s
 
 logging:
   level:

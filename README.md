@@ -2,7 +2,7 @@
 
 Software Architecture Assignment 2 (2026). Uses ADD method with a **multi-agent** pipeline (Distributed reasoning + collaborative verification) to design the Hotel Pricing System architecture.
 
-**LLM:** DeepSeek-V4-Flash (via Spring AI Alibaba / DashScope)  
+**LLM:** DeepSeek-V4-Pro (via Spring AI Alibaba / DashScope)  
 **Group Paradigm:** Option 3 — Multi-Agent (Designer → Reviewer → Finalizer)
 
 ## Project Structure
